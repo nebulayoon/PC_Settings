@@ -1,7 +1,8 @@
 # PC_Settings
 
 ### WSL 설정
-```wsl 활성화
+```
+wsl 활성화
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 vm 활성화
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
@@ -9,4 +10,5 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 https://docs.microsoft.com/ko-kr/windows/wsl/install-manual
 wsl 2 set
 wsl --set-default-version 2
-store에서 ubuntu 설치```
+store에서 ubuntu 설치
+```
