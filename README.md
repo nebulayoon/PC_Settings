@@ -2,7 +2,7 @@
 
 ### windows10 WSL 설정
 ```
-**wsl 활성화**
+[wsl 활성화]
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 
 vm 활성화
