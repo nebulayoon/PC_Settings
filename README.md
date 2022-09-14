@@ -26,3 +26,14 @@ HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search
 BingSearchEnabled 0
 CortanaConsent 0
 ```
+
+### Window10 자동 업데이트 해제
+```
+[windows service]
+service -> windows update ->disable
+
+[자동 업데이트 해제(gpedit.msc)]
+로컬 컴퓨터 정책 -> 컴퓨터 구성 -> 관리 템플릿 -> Windows 구성 요소 -> Windows Update -> 자동 업데이트 구성
+Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates
+
+```
