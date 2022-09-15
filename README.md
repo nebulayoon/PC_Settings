@@ -52,7 +52,16 @@ ZSH_THEME="agnoster"
 https://github.com/powerline/fonts
 https://github.com/naver/d2codingfont/releases/tag/VER1.3.2
 
-[Windows Terminal 테마]
+[플러그인]
+<syntax highlighting>
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+vim ~/.zshrc
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+```
+
+### Windows Terminal 테마(theme)
+```
+[settings.json]
 "defaults":
         {
             // Put settings here that you want to apply to all profiles.
@@ -60,10 +69,4 @@ https://github.com/naver/d2codingfont/releases/tag/VER1.3.2
             "fontFace": "D2Coding",
             "fontSize": 11
         }
-
-[플러그인]
-<syntax highlighting>
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-vim ~/.zshrc
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 ```
