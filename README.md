@@ -37,3 +37,33 @@ service -> windows update ->disable
 Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates
 
 ```
+
+### ZSH 설정
+```
+[zsh 및 oh my zsh 설치]
+sudo apt-get install zsh -y
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+[테마]
+vim ~/.zshrc
+ZSH_THEME="agnoster"
+
+[폰트]
+https://github.com/powerline/fonts
+https://github.com/naver/d2codingfont/releases/tag/VER1.3.2
+
+[Windows Terminal 테마]
+"defaults":
+        {
+            // Put settings here that you want to apply to all profiles.
+            "colorScheme": "Solarized Dark",
+            "fontFace": "D2Coding",
+            "fontSize": 11
+        }
+
+[플러그인]
+<syntax highlighting>
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+vim ~/.zshrc
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+```
